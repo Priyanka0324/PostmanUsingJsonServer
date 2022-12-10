@@ -1,0 +1,24 @@
+{
+	"info": {
+		"_postman_id": "ecbe5550-dd14-4247-b5db-1a95c68ebd99",
+		"name": "DataDriven",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24514771"
+	},
+	"item": [
+		{
+			"name": "Get Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}",
+					"host": [
+						"{{endpoint}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

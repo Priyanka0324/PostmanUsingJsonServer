@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "ecb2702b-8b91-4378-a8e3-6f6c560e4c9e",
+		"name": "Variable_Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24514771"
+	},
+	"item": [
+		{
+			"name": "Global_Variable",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/employees",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Environment_Variable",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/employees/{{emp_id}}",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"employees",
+						"{{emp_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Collection_variable",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/employees/{{emp_id_collection}}",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"employees",
+						"{{emp_id_collection}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"const number = pm.globals.get(\"Cell_No\");",
+					"pm.globals.set(\"Cell_No\", \"+1\" + number);"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "emp_id_collection",
+			"value": "5",
+			"type": "string"
+		}
+	]
+}

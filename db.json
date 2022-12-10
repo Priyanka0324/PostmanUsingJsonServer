@@ -1,0 +1,49 @@
+{
+  "employees": [
+    {
+      "name": "Neal",
+      "salary": "7500",
+      "id": 1
+    },
+    {
+      "name": "Priyanka",
+      "salary": "8000",
+      "id": 5
+    },
+    {
+      "name": "JOHN",
+      "salary": "9000",
+      "id": 7
+    },
+    {
+      "name": "JOHN",
+      "salary": "9000",
+      "id": 8
+    },
+    {
+      "name": "Ravi",
+      "salary": "12000",
+      "id": 9
+    },
+    {
+      "name": "Ramesh",
+      "salary": "35000",
+      "id": 10
+    },
+    {
+      "name": "Andri",
+      "salary": "35000",
+      "id": 11
+    },
+    {
+      "name": "Andri",
+      "salary": "35000",
+      "id": 12
+    },
+    {
+      "name": "Mogli",
+      "salary": "34000",
+      "id": 13
+    }
+  ]
+}
